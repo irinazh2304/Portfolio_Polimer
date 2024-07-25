@@ -1,0 +1,305 @@
+.image {
+    overflow: hidden;
+
+}
+.image-img {
+    position: absolute;
+    width: 100%;
+    height: 707px;
+
+    & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.image-link {
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    &__line {
+        position: absolute;
+        margin-top: 447px;
+    }
+}
+.image-link-left {
+    flex-direction: column;
+    width: 48%;
+
+    &__subtitle {
+        width: 590px;
+        line-height: 84px;
+        font-size: 84px;
+        margin-top: 140px;
+        font-family: "Museo Cyrl 500";
+    }
+    &__title {
+        width: 211px;
+        font-size: 26px;
+        color: var(--green2-color);
+        margin: 62px 0px 0px 180px;
+        line-height: 25px;
+    }
+    &__img100 {
+        margin-top: -48px;
+    }
+}
+.image-link-right {
+    width: 53%;
+    position: relative;
+    &__boxing,
+    &__fork,
+    &__spoon,
+    &__cup,
+    &__shadow1,
+    &__shadow2 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__boxing {
+        width: 735px;
+        top: 46.3%;
+        left: 85.8%;
+    }
+    &__fork {
+        width: 645px;
+        top: 66.5%;
+        left: 37%;
+    }
+    &__spoon {
+        width: 300px;
+        top: 47.8%;
+        left: 94.2%;
+    }
+    &__cup {
+        width: 800px;
+        top: 63.3%;
+        left: 70.5%;
+    }
+    &__shadow1 {
+        width: 730px;
+        top: 90%;
+        left: 50%;
+    }
+    &__shadow2 {
+        width: 730px;
+        top: 90%;
+        left: 82%;
+    }
+}
+.default-btn {
+    &__image-link-left {
+        margin-top: 83px;
+        margin-bottom: 150px;
+        padding: 13px 41px;
+    }
+}
+@media (max-width: 1024px) {
+    .image-img {
+        height: 560px;
+    }
+    .image-link {
+        &__line {
+            margin-top: 347px;
+        }
+    }
+    .image-link-left {
+        &__subtitle {
+            font-size: 78px;
+            margin-top: 66px;
+            line-height: 78px;
+        }
+        &__title {
+            font-size: 22px;
+            margin: 30px 0px 0px 150px;
+            line-height: 22px;
+            letter-spacing: 0.15px;
+        }
+        &__img100 {
+            margin-top: -42px;
+            width: 135px;
+
+            &__img100 img {
+                width: 100%;
+            }
+        }
+    }
+    .default-btn {
+        &__image-link-left {
+            margin-top: 99px;
+            padding: 13px 41px;
+        }
+    }
+    .image-link-right {
+        &__boxing {
+            width: 585px;
+            top: 41.7%;
+            left: 83.5%;
+        }
+        &__fork {
+            width: 500px;
+            top: 61%;
+            left: 40%;
+        }
+        &__spoon {
+            width: 240px;
+            top: 43.3%;
+            left: 91.5%;
+        }
+        &__cup {
+            width: 630px;
+            top: 65%;
+            left: 68%;
+        }
+        &__shadow1 {
+            width: 650px;
+            top: 81.5%;
+            left: 45%;
+        }
+        &__shadow2 {
+            width: 650px;
+            top: 81.5%;
+            left: 75%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .image-img {
+        height: 455px;
+    }
+    .image-link {
+        &__line {
+            margin-top: 277px;
+        }
+    }
+    .image-link-left {
+        &__subtitle {
+            font-size: 60px;
+            margin-top: 52px;
+            line-height: 60px;
+        }
+        &__title {
+            font-size: 18px;
+            margin: 34px 0px 0px 124px;
+            line-height: 18px;
+        }
+        &__img100 {
+            margin-top: -32px;
+            width: 108px;
+
+            &__img100 img {
+                width: 100%;
+            }
+        }
+    }
+    .default-btn {
+        &__image-link-left {
+            margin-top: 92px;
+            padding: 13px 41px;
+        }
+    }
+    .image-link-right {
+        &__boxing {
+            width: 400px;
+            top: 44%;
+            left: 92%;
+        }
+        &__fork {
+            width: 330px;
+            top: 55%;
+            left: 50%;
+        }
+        &__spoon {
+            width: 150px;
+            top: 36%;
+            left: 96%;
+        }
+        &__cup {
+            width: 480px;
+            top: 58%;
+            left: 78%;
+        }
+        &__shadow1 {
+            width: 450px;
+            top: 78%;
+            left: 54%;
+        }
+        &__shadow2 {
+            width: 450px;
+            top: 77.5%;
+            left: 84%;
+        }
+    }
+}
+@media (max-width: 580px) {
+    .image-img {
+        height: 485px;
+    }
+    .image-link {
+        &__line {
+            display: none;
+        }
+    }
+    .image-link-left {
+        &__subtitle {
+            font-size: 60px;
+            margin-top: 25px;
+            line-height: 55px;
+            font-weight: 500;
+        }
+        &__title {
+            margin: 30px 0px 0px 125px;
+        }
+        &__img100 {
+            margin-top: -32px;
+            width: 108px;
+
+            &__img100 img {
+                width: 100%;
+            }
+        }
+    }
+    .default-btn {
+        &__image-link-left {
+            margin-top: 175px;
+        }
+    }
+    .image-link-right {
+        &__boxing {
+            width: 500px;
+            top: 47%;
+            left: 89%;
+        }
+        &__fork {
+            width: 280px;
+            top: 62%;
+            left: 19%;
+        }
+        &__spoon {
+            width: 160px;
+            top: 40%;
+            left: 91%;
+        }
+        &__cup {
+            width: 430px;
+            top: 63%;
+            left: 73%;
+        }
+        &__shadow1 {
+            width: 450px;
+            top: 80%;
+            left: 31%;
+        }
+        &__shadow2 {
+            width: 450px;
+            top: 79%;
+            left: 85%;
+        }
+    }
+}
