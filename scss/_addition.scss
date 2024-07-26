@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Museo Sans Cyrl 500";
+    src: url(/fonts/MuseoSansCyrl-500.woff), url(/fonts/MuseoSansCyrl-500.woff2);
+}
+@font-face {
+    font-family: "Museo Cyrl 500";
+    src: url(/fonts/MuseoCyrl-500.woff);
+}
+:root {
+    --green-color: #4ea015;
+    --green2-color: #086f02;
+    --light-green-color: #80bf1d;
+    --dark-green-color: #087006;
+    --gray-color: #e0e0e0;
+    --white-color: #fff;
+    --black-color: #000;
+    --base-color-hover: #087006;
+    --base-color-active: #80bf1d;
+    --transition-duration: 0.3s;
+}
+
+html {
+    box-sizing: border-box; /*чтобы padding работали правильно*/
+    height: 100%;
+}
+*,
+body {
+    font-size: 16px; /*шрифт по умолчанию*/
+    font-family: "Museo Sans Cyrl 500";
+    margin: 0; /*обнуление всех margin по умолчанию, если его размер не указан*/
+    color: var(--black-color);
+}
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+img {
+    max-width: 100%; /*чтобы картинка не выходила за пределы экрана*/
+}
+a {
+    text-decoration: none; /*чтобы не было нижнего подчеркивания по умолчанию*/
+}
+
+/*--------------Контейнер--------------*/
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+    body.lock {
+        overflow: hidden;
+    }
+
+    .container {
+        max-width: 1007px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+/*--------------кнопка--------------*/
+
+.default-btn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white-color);
+    padding: 11px 40px;
+    border-radius: 10px;
+    background-color: var(--green-color);
+    border: none;
+    transition: outline-color var(--transition-duration), background-color var(--transition-duration);
+    cursor: pointer; /*курсор в виде руки*/
+}
+.default-btn:hover {
+    background-color: var(--green2-color);
+}
+.default-btn:active {
+    background-color: var(--dark-green-color);
+}
+
+main {
+    flex: 1 1 auto;
+}

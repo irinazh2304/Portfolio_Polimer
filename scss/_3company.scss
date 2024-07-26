@@ -1,0 +1,211 @@
+.company {
+    &__subtitle {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 86px;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 82px 105px;
+        justify-items: center;
+        margin-top: 65px;
+    }
+    &__item {
+        &_subtitle {
+            margin-top: 27px;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+        }
+        &_title {
+            margin-top: 21px;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: -0.2px;
+            line-height: 30px;
+            margin-right: 20px;
+            span {
+                white-space: nowrap;
+                font-size: 18px;
+                letter-spacing: -0.2px;
+            }
+        }
+        &_subtitle2 {
+            margin-top: 27px;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+        }
+        &_title2 {
+            margin-top: 21px;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: -0.2px;
+            line-height: 30px;
+        }
+        &_subtitle3 {
+            margin-top: 27px;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.15px;
+        }
+        &_title3 {
+            margin-top: 21px;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: -0.23px;
+            line-height: 30px;
+        }
+        &_subtitle4 {
+            margin-top: 27px;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+        }
+        &_title4 {
+            margin-top: 21px;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: -0.23px;
+            line-height: 30px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .company {
+        &__subtitle {
+            font-size: 44px;
+            margin-top: -11px;
+            letter-spacing: 0.5px;
+        }
+        &__grid {
+            grid-gap: 51px 81px;
+            margin-top: 36px;
+        }
+        &__item {
+            &_subtitle {
+                margin-top: 22px;
+                font-size: 18px;
+                letter-spacing: 1.5px;
+            }
+            &_title {
+                font-size: 16px;
+                line-height: 27px;
+                letter-spacing: -0.17px;
+                margin-right: 5px;
+                span {
+                    white-space: nowrap;
+                    font-size: 16px;
+                    letter-spacing: -0.2px;
+                }
+            }
+            &_subtitle2 {
+                margin-top: 22px;
+                font-size: 18px;
+            }
+            &_title2 {
+                font-size: 16px;
+                letter-spacing: -0.15px;
+                line-height: 27px;
+            }
+            &_subtitle3 {
+                margin-top: 23px;
+                font-size: 18px;
+                letter-spacing: 0.1px;
+            }
+            &_title3 {
+                margin-right: 5px;
+                font-size: 16px;
+                letter-spacing: -0.2px;
+                line-height: 27px;
+            }
+            &_subtitle4 {
+                margin-top: 22px;
+                font-size: 18px;
+            }
+            &_title4 {
+                margin-right: 3px;
+                font-size: 16px;
+                letter-spacing: -0.17px;
+                line-height: 27px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .company {
+        &__subtitle {
+            font-size: 38px;
+            margin-top: -36px;
+        }
+        &__grid {
+            grid-gap: 25px 60px;
+            margin-top: 36px;
+        }
+        &__item {
+            &_subtitle,
+            &_subtitle2,
+            &_subtitle3,
+            &_subtitle4 {
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0.5px;
+            }
+            &_title,
+            &_title2,
+            &_title3,
+            &_title4 {
+                margin-right: 0px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 580px) {
+    .company {
+        &__subtitle {
+            font-size: 32px;
+            margin-top: -75px;
+        }
+        &__grid {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 35px 10px 0px 10px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &_img,
+            &_img2,
+            &_img3,
+            &_img4 {
+                width: 90px;
+            }
+
+            &_subtitle,
+            &_subtitle2,
+            &_subtitle3,
+            &_subtitle4 {
+                font-size: 19px;
+                line-height: 35px;
+                margin-top: 10px;
+            }
+            &_title,
+            &_title2,
+            &_title3,
+            &_title4 {
+                text-align: left;
+                margin-top: 10px;
+                margin-right: 0px;
+                font-size: 15px;
+                span {
+                    font-size: 15px;
+                    letter-spacing: 0px;
+                }
+            }
+        }
+    }
+}
