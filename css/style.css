@@ -1,11 +1,12 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Museo Sans Cyrl 500";
-  src: url(fonts/MuseoSansCyrl-500.woff), url(fonts/MuseoSansCyrl-500.woff2);
+    font-family: "Museo Sans Cyrl 500";
+    src: url("./../fonts/MuseoSansCyrl-500.woff") format("woff"), 
+        url("./../fonts/MuseoSansCyrl-500.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Museo Cyrl 500";
-  src: url(fonts/MuseoCyrl-500.woff);
+    font-family: "Museo Cyrl 500";
+    src: url("./../fonts/MuseoCyrl-500.woff") format("woff");
 }
 :root {
   --green-color: #4ea015;
